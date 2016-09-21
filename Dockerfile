@@ -6,5 +6,4 @@ COPY src /home/root/javahelloworld/src
 RUN javac -d bin /home/root/javahelloworld/src/HelloWorld.java
 RUN apt-get update
 ENV JAVA_HOME2 /usr/bin/java
-ENV APP_PORT2 8080
 ENTRYPOINT ["java","-cp", "bin",  "HelloWorld"]
